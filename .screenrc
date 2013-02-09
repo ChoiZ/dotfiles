@@ -1,0 +1,4 @@
+# Disable the startup message
+startup_message off
+# Bigger scroll (def:100)
+defscrollback 1000
