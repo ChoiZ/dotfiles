@@ -1,5 +1,5 @@
 [user]
-  name = François LASSERRE
+	name = François LASSERRE
 	email = choiz@me.com
 [diff]
 	tool = vimdiff
