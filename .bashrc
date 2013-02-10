@@ -21,7 +21,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 else
   COLOR_TERM=
 fi
-
+##
 if [ "$COLOR_TERM" ]; then
   export GREP_OPTIONS='--color=auto'
   ls --color -d . &>/dev/null 2>&1 \
