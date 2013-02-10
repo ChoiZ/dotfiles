@@ -16,6 +16,12 @@ alias ....='cd ../../..'
 alias -- -='cd -'
 
 ## Colors: enable color support for ls and grep when possible
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+  COLOR_TERM=yes
+else
+  COLOR_TERM=
+fi
+
 if [ "$COLOR_TERM" ]; then
   export GREP_OPTIONS='--color=auto'
   ls --color -d . &>/dev/null 2>&1 \
