@@ -16,7 +16,7 @@ function xzip() {
 		if [ -d $folder ]; then
 			echo "The folder $folder already exist!"
 		else
-    		echo "Unzip in the folder $folder."
+    			echo "Unzip in the folder $folder."
 			unzip $1 -d $folder
 		fi
 	fi
