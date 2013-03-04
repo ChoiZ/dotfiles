@@ -1,5 +1,5 @@
 # ~/.bashrc
-# Last modified: 2013-02-10
+# Last modified: 2013-03-04
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -59,3 +59,6 @@ alias s=svn
 
 ## Network
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+## Functions
+source ~/.bash_functions
