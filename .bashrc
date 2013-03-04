@@ -7,6 +7,13 @@ export EDITOR=vim
 export SVN_EDITOR=vim
 export SVN_MERGE=vimdiff
 
+# Completion
+
+## SSH auto-completion
+if [[ -e ~/.ssh/known_hosts ]]; then
+    complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp stfp
+fi
+
 # Aliases
 
 # Directory operations
