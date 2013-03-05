@@ -3,6 +3,11 @@
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
+# Rm '.svn' folder
+function svnclean () {
+	find . -name ".svn" -type d -exec rm -rf {} \;
+}
+
 # Unzip in a folder
 function xzip() {
     var=`zipinfo $1|sed -n 2p|cut -d 'r' -f1`
