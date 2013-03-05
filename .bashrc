@@ -1,5 +1,5 @@
 # ~/.bashrc
-# Last modified: 2013-03-04
+# Last modified: 2013-03-05
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -10,6 +10,7 @@ export SVN_MERGE=vimdiff
 # Completion
 
 ## SSH auto-completion
+# Note doesn't work with user@host (use "-l user").
 if [[ -e ~/.ssh/known_hosts ]]; then
     complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp stfp
 fi
@@ -21,6 +22,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias -- -='cd -'
+alias p=pwd
 
 ## Colors: enable color support for ls and grep when possible
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -28,7 +30,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 else
   COLOR_TERM=
 fi
-##
+
 if [ "$COLOR_TERM" ]; then
   export GREP_OPTIONS='--color=auto'
   ls --color -d . &>/dev/null 2>&1 \
@@ -51,8 +53,6 @@ alias less='less -x4'
 ## more display [Press space to continue, 'q' to quit.]
 alias more='more -d'
 
-alias p=pwd
-
 ## Vim
 alias v=vim
 alias vi=vim
@@ -68,4 +68,4 @@ alias s=svn
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 ## Functions
-source ~/.bash_functions
+[[ -s "~/.bash_functions" ]] && source "~/.bash_functions"
