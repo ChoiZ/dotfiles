@@ -1,5 +1,5 @@
 # ~/.bashrc
-# Last modified: 2013-02-10
+# Last modified: 2013-03-05
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
