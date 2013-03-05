@@ -42,3 +42,19 @@ mkc() {
 		mkdir -p "$@" && cd "$_"
 	fi
 }
+
+# Check PHP syntax
+chkphp() {
+	for file in `find .`
+	do
+		EXT="${file##*.}"
+		if [ "$EXT" == "php" ]
+		then
+			RESULTS=`php -l $file`
+			if [ "$RESULTS" != "No syntax errors detected in $file" ]
+			then
+				echo $RESULTS
+			fi
+		fi
+	done
+}
