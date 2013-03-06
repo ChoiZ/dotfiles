@@ -1,0 +1,110 @@
+#!/bin/bash
+
+# ~/.osx
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "ChoiZbook Air"
+sudo scutil --set HostName "ChoiZbook Air"
+sudo scutil --set LocalHostName "ChoiZbook-Air"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ChoiZbook-Air"
+
+# Set the icon size of Dock items to 45 pixels
+defaults write com.apple.dock tilesize -int 45
+
+# Display additional information on the loginscreen (10.7, 10.8)
+defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Change the default location for screenshots in Mac OS X (10.5, 10.6, 10.7, 10.8)
+defaults write com.apple.screencapture location ~/screenshot
+
+# Disable the creation of .DS_store files (10.5, 10.6, 10.7, 10.8)
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+# Disable the new window animation in Mac OS X (10.7, 10.8)
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+# Change default Mac OS X screencapture file type (10.5, 10.6, 10.7, 10.8)
+# Default png (png, pdf, tiff, pict, jpg, bmp, gif, psd, sgi and tga.)
+defaults write com.apple.screencapture type jpg
+
+# Increase the speed of OS X dialogs boxes (10.6, 10.7, 10.8)
+# .1 is the time of the animation, default time is .2 seconds. To make the sheets instantly visible use the value .001
+defaults write NSGlobalDomain NSWindowResizeTime .001
+
+# Hot corners
+# Possible values:
+# 0: no-op
+# 2: Mission Control
+# 3: Show application windows
+# 4: Desktop
+# 5: Start screen saver
+# 6: Disable screen saver
+# 7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# Bottom left screen corner → Show application windows
+defaults write com.apple.dock wvous-bl-corner -int 3
+defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom right screen corner → Mission Control
+defaults write com.apple.dock wvous-bl-corner -int 2
+defaults write com.apple.dock wvous-bl-modifier -int 0
+# Top left screen corner → Mission Control
+defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Desktop
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
+
+
+## Finder
+
+# Show hidden files in OS X Finder (10.5, 10.6, 10.7, 10.8)
+defaults write com.apple.Finder AppleShowAllFiles -bool true
+
+# Display the file extensions in Finder (10.5, 10.6, 10.7, 10.8)
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable window animations in OS X Finder (10.6, 10.7, 10.8)
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Display full posix path in OS X Finder title Bar (10.6, 10.7, 10.8)
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+
+## TimeMachine
+
+# Setup a size limit for Time Machine backup volumes [102400 = 100GB] (10.5, 10.6, 10.7, 10.8)
+defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
+# remove the limit 
+# defaults delete /Library/Preferences/com.apple.TimeMachine MaxSize
+
+
+## Twitter App
+
+# Twitter: Close ‘New Tweet’ window with ESC-key (10.6, 10.7, 10.8)
+defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
+
+
+## Mail.app
+
+# Copy & Paste only the Email address in OS X Mail (10.6, 10.7, 10.8)
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Disable reply animation in OS X Mail (10.7, 10.8)
+defaults write com.apple.Mail DisableReplyAnimations -bool YES
+
+
+## Software update
+
+# Change the frequency of software updates checks (10.8)
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ScheduleFrequency 1
