@@ -22,7 +22,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 defaults write com.apple.dock tilesize -int 45
 
 # Display additional information on the loginscreen (10.7, 10.8)
-defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Change the default location for screenshots in Mac OS X (10.5, 10.6, 10.7, 10.8)
 defaults write com.apple.screencapture location ~/screenshot
@@ -40,6 +40,12 @@ defaults write com.apple.screencapture type jpg
 # Increase the speed of OS X dialogs boxes (10.6, 10.7, 10.8)
 # .1 is the time of the animation, default time is .2 seconds. To make the sheets instantly visible use the value .001
 defaults write NSGlobalDomain NSWindowResizeTime .001
+
+defaults write NSGlobalDomain AppleLanguages -array "fr" "en"
+defaults write NSGlobalDomain AppleLocale -string "fr_FR"
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
 
 # Hot corners
 # Possible values:
@@ -84,7 +90,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 ## TimeMachine
 
 # Setup a size limit for Time Machine backup volumes [102400 = 100GB] (10.5, 10.6, 10.7, 10.8)
-defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
+sudo defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
 # remove the limit 
 # defaults delete /Library/Preferences/com.apple.TimeMachine MaxSize
 
@@ -107,4 +113,4 @@ defaults write com.apple.Mail DisableReplyAnimations -bool YES
 ## Software update
 
 # Change the frequency of software updates checks (10.8)
-defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ScheduleFrequency 1
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ScheduleFrequency 1
