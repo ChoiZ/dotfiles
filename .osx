@@ -1,6 +1,8 @@
-#!/bin/bash
-
 # ~/.osx
+# Last modified: 2013-03-07
+# Author: François LASSERRE <choiz@me.com>
+# License: GNU GPL http://www.gnu.org/licenses/gpl.html
+#!/bin/bash
 
 # Ask for the administrator password upfront
 sudo -v
