@@ -12,6 +12,7 @@ alias clr='clear'
 alias cls='clear'
 alias du='du -h --max-depth=1'
 alias df='df -h'
+alias dl='cd ~/Download'
 alias g=git
 alias h=hg
 alias he=head
