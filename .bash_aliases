@@ -5,7 +5,7 @@
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ....='cd ../../..'
+alias …='cd ../..'
 alias -- -='cd -'
 alias c=cat
 alias clr='clear'
@@ -13,6 +13,7 @@ alias cls='clear'
 alias du='du -h --max-depth=1'
 alias df='df -h'
 alias dl='cd ~/Download'
+alias doc='cd ~/Documents'
 alias g=git
 alias h=hg
 alias he=head
@@ -22,13 +23,14 @@ alias ll='ls -ahlF'
 alias lh='ls -xAF'
 alias lv='ls -1AF'
 alias m=hg
+alias mv='mv -i'
 alias p=pwd
 alias s=svn
 alias se=sed
 alias t=tail
 alias v=vim
 alias vi=vim
-alias .x=exit
+alias x=exit
 alias :q=exit
 
 ## less indent = 4
