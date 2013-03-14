@@ -1,5 +1,5 @@
 # ~/.bash_aliases
-# Last modified: 2013-03-12
+# Last modified: 2013-03-14
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -17,7 +17,6 @@ alias g=git
 alias gr=grep
 alias h=hg
 alias he=head
-alias k=clear
 alias l='ls -ahlF'
 alias ll='ls -ahlF'
 alias lh='ls -xAF'
@@ -25,11 +24,12 @@ alias lv='ls -1AF'
 alias m=hg
 alias mv='mv -i'
 alias p=pwd
+alias ph=php
 alias ps='ps -aux'
+alias py=python
 alias s=svn
 alias se=sed
 alias t=tail
-alias v=vim
 alias vi=vim
 alias x=exit
 alias :q=exit
