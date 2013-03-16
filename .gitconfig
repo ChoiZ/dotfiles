@@ -37,3 +37,5 @@
 	tool = vimdiff
 [http]
 	#sslverify = false
+[github]
+	user = ChoiZ
