@@ -4,12 +4,12 @@
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 # Rm '.svn' folder
-function svnclean () {
+svnclean () {
 	find . -name ".svn" -type d -exec rm -rf {} \;
 }
 
 # Unzip in a folder
-function xzip() {
+xzip() {
     var=`zipinfo $1|sed -n 2p|cut -d 'r' -f1`
     s=$1
     # maybe we can use ${$1%.zip} with antislash?
@@ -57,4 +57,12 @@ chkphp() {
 			fi
 		fi
 	done
+}
+
+# Get Ip
+# @param url $1
+# get page with content like "my ip MTI3LjAuMC4x" MTI3LjAuMC4x == 127.0.0.1 base64
+getIp() {
+	ip=`curl -s $1|tail -n1|cut -d " " -f3|base64 -D`
+	echo $ip
 }
