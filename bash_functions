@@ -1,5 +1,5 @@
-# ~/.bash_functions
-# Last modified: 2013-03-20
+# bash_functions
+# Last modified: 2013-03-21
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
