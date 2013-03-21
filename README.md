@@ -1,12 +1,10 @@
 ## dotfiles
 
-Here my dotfiles. Use it, edit it and share it ;)
+# Setup
 
+    $ git clone https://github.com/ChoiZ/dotfiles.git ~/
+    $ ln -s dotfiles/bashrc ~/.bashrc
 
-- bash: bashrc & bash_funtions
+And same command to link .screenrc, .tmux.conf… like:
 
-- git: config & ignore
-
-- hg: config & ignore
-
-- screenrc
+    $ ln -s dotfiles/.screenrc ~/.screenrc
