@@ -1,10 +1,14 @@
-## dotfiles
+<h1>dotfiles</h1>
 
-# Setup
+<h2>Setup</h2>
 
-    $ git clone https://github.com/ChoiZ/dotfiles.git ~/
-    $ ln -s dotfiles/bashrc ~/.bashrc
+```bash
+git clone https://github.com/ChoiZ/dotfiles.git ~/
+ln -s dotfiles/bashrc ~/.bashrc
+```
 
 And same command to link .screenrc, .tmux.conf… like:
 
-    $ ln -s dotfiles/.screenrc ~/.screenrc
+```bash
+ln -s dotfiles/.screenrc ~/.screenrc
+```
