@@ -18,6 +18,8 @@
 	di = diff
 	ph = push
 	pl = pull
+	me = merge
+	menoff = merge --no-ff
 	sta = stash
 	stalist = stash list
 	stast = stash list
