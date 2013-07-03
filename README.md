@@ -26,3 +26,27 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 # osx
 ln -s ~/dotfiles/osx ~/.osx
 ```
+
+<h2>Use git keywords like svn?</h2>
+
+<p>Add in your php files:</p>
+
+```php
+<?php
+/**
+ * $Id$
+ * $Date$
+ * $File$
+ * $Author$
+ * $Revision$
+ * $Source$
+ */
+```
+
+<p>Create a .gitattributes file in your repos</p>
+```bash
+*.css filter=rcs-keywords
+*.js filter=rcs-keywords
+*.php filter=rcs-keywords
+```
+
