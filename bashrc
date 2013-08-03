@@ -1,7 +1,7 @@
 # bashrc
-# Last modified: 2013-03-21
+# Last modified: 2013-08-02
 # Author: François LASSERRE <choiz@me.com>
-# License: GNU GPL http://www.gnu.org/licenses/gpl.html
+# License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 export EDITOR=vim
 export SVN_EDITOR=vim
@@ -29,3 +29,11 @@ fi
 
 # SSH
 [[ -s "~/dotfiles/bash_ssh" ]] && source "~/dotfiles/bash_ssh"
+
+# Colors
+source ~/.bash_colors.sh
+
+# Add Git in prompt
+source ~/.git-prompt.sh
+
+export PS1="\[$Green\]\t \[$Blue\]\u \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "

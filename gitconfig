@@ -36,6 +36,8 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 	filemode = false
+[push]
+    default = current
 [merge]
 	tool = vimdiff
 [http]
