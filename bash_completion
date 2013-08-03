@@ -1,10 +1,10 @@
-# bash_completion
-# Last modified: 2013-03-21
+# ~/.bash_completion
+# Last modified: 2013-08-03
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 # SSH auto-completion
 # Note doesn't work with user@host (use "-l user").
 if [[ -e ~/.ssh/known_hosts ]]; then
-	complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp stfp
+  complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp stfp
 fi

@@ -73,8 +73,7 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
-
-## Finder
+## Finder
 
 # Show hidden files in OS X Finder (10.5, 10.6, 10.7, 10.8)
 defaults write com.apple.Finder AppleShowAllFiles -bool true
@@ -88,22 +87,19 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 # Display full posix path in OS X Finder title Bar (10.6, 10.7, 10.8)
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-
-## TimeMachine
+## TimeMachine
 
 # Setup a size limit for Time Machine backup volumes [102400 = 100GB] (10.5, 10.6, 10.7, 10.8)
 sudo defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
-# remove the limit 
+# remove the limit
 # defaults delete /Library/Preferences/com.apple.TimeMachine MaxSize
 
-
-## Twitter App
+## Twitter App
 
 # Twitter: Close ‘New Tweet’ window with ESC-key (10.6, 10.7, 10.8)
 defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
 
-
-## Mail.app
+## Mail.app
 
 # Copy & Paste only the Email address in OS X Mail (10.6, 10.7, 10.8)
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
@@ -111,8 +107,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Disable reply animation in OS X Mail (10.7, 10.8)
 defaults write com.apple.Mail DisableReplyAnimations -bool YES
 
-
 ## Software update
 
-# Change the frequency of software updates checks (10.8)
+ Change the frequency of software updates checks (10.8)
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ScheduleFrequency 1

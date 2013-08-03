@@ -5,7 +5,7 @@
 #
 # Usage:
 #    .git_filter/rcs-keywords.smudge file_path < file_contents
-# 
+#
 # To add keyword expansion:
 #    <project>/.gitattributes                    - *.php filter=rcs-keywords
 #    ~/.git_filters/rcs-keywords.smudge
@@ -13,8 +13,8 @@
 #    ~/.gitconfig                                - add [filter] lines below
 #
 # [filter "rcs-keywords"]
-#	clean  = ~/.git_filters/rcs-keywords.clean
-#	smudge = ~/.git_filters/rcs-keywords.smudge %f
+#     clean  = ~/.git_filters/rcs-keywords.clean
+#     smudge = ~/.git_filters/rcs-keywords.smudge %f
 #
 # Copyright (c) 2009-2011 Turon Technologies, Inc.  All rights reserved.
 

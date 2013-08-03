@@ -54,4 +54,3 @@ ln -s ~/dotfiles/osx ~/.osx
 *.js filter=rcs-keywords
 *.php filter=rcs-keywords
 ```
-
