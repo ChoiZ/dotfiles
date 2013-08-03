@@ -40,7 +40,7 @@ extract () {
       *.tar) tar xvf $1 && cd $(basename "$1" .tar) ;;
       *.tbz2) tar xvjf $1 && cd $(basename "$1" .tbz2) ;;
       *.tgz) tar xvzf $1 && cd $(basename "$1" .tgz) ;;
-      *.zip) xzip $1 && cd $(basename "$1" .zip) ;; // unzip replace by my custom unzip `xzip`
+      *.zip) xzip $1 && cd $(basename "$1" .zip) ;; # unzip replace by my custom unzip `xzip`
       *.Z) uncompress $1 && cd $(basename "$1" .Z) ;;
       *.7z) 7z x $1 && cd $(basename "$1" .7z) ;;
       *) echo "don't know how to extract '$1'..." ;;
