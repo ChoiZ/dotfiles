@@ -36,4 +36,4 @@ source ~/.bash_colors
 # Add Git in prompt
 source ~/.git-prompt
 
-export PS1="\[$Green\]\t \[$Blue\]\u \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "
+export PS1="\[$Green\]\t \[$Blue\]\u@\h \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "
