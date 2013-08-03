@@ -2,6 +2,8 @@
 
 <p>Config files for (bash, git, screen, tmux, osx & zsh)</p>
 
+<img src="https://raw.github.com/ChoiZ/dotfiles/gh-pages/screenshot.png" alt="screenshot" />
+
 <h2>Setup</h2>
 
 ```bash
