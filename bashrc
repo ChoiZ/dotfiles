@@ -18,21 +18,21 @@ else
 fi
 
 # Aliases
-[[ -s "~/dotfiles/bash_aliases" ]] && source "~/dotfiles/bash_aliases"
+[[ -s ~/dotfiles/bash_aliases ]] && source ~/dotfiles/bash_aliases
 
 # Completion
-[[ -s "~/dotfiles/bash_completion" ]] && source "~/dotfiles/bash_completion"
+[[ -s ~/dotfiles/bash_completion ]] && source ~/dotfiles/bash_completion
 
 # Functions
-[[ -s "~/dotfiles/bash_functions" ]] && source "~/dotfiles/bash_functions"
+[[ -s ~/dotfiles/bash_functions ]] && source ~/dotfiles/bash_functions
 
 # SSH
-[[ -s "~/dotfiles/bash_ssh" ]] && source "~/dotfiles/bash_ssh"
+[[ -s ~/dotfiles/bash_ssh ]] && source ~/dotfiles/bash_ssh
 
 # Colors
-[[ -s "~/dotfiles/bash_colors" ]] && source "~/dotfiles/bash_colors"
+[[ -s ~/dotfiles/bash_colors ]] && source ~/dotfiles/bash_colors
 
 # Add Git in prompt
-[[ -s "~/dotfiles/git-prompt" ]] && source "~/dotfiles/git-prompt"
+[[ -s ~/dotfiles/git-prompt ]] && source ~/dotfiles/git-prompt
 
 export PS1="\[$Green\]\t \[$Blue\]\u@\h \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "
