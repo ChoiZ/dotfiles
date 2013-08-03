@@ -7,10 +7,8 @@
 ```bash
 git clone git://github.com/ChoiZ/dotfiles.git ~/
 ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/bash_colors ~/.bash_colors
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
-ln -s ~/dotfiles/git-prompt ~/.git-prompt
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
 
