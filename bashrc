@@ -31,9 +31,9 @@ fi
 [[ -s "~/dotfiles/bash_ssh" ]] && source "~/dotfiles/bash_ssh"
 
 # Colors
-source ~/.bash_colors.sh
+source ~/.bash_colors
 
 # Add Git in prompt
-source ~/.git-prompt.sh
+source ~/.git-prompt
 
 export PS1="\[$Green\]\t \[$Blue\]\u \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "
