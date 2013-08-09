@@ -23,6 +23,9 @@ fi
 # Completion
 [[ -s ~/dotfiles/bash_completion ]] && source ~/dotfiles/bash_completion
 
+# Git Completion
+[[ -s ~/dotfiles/git-completion ]] && source ~/dotfiles/git-completion
+
 # Functions
 [[ -s ~/dotfiles/bash_functions ]] && source ~/dotfiles/bash_functions
 

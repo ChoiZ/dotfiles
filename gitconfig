@@ -42,7 +42,7 @@
   editor = vim
   filemode = false
 [push]
-    default = current
+  default = current
 [merge]
   tool = vimdiff
 [http]
