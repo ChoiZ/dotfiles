@@ -7,7 +7,7 @@
 <h2>Setup</h2>
 
 ```bash
-git clone git://github.com/ChoiZ/dotfiles.git ~/
+cd ~ && git clone git://github.com/ChoiZ/dotfiles.git
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
