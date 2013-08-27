@@ -30,6 +30,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ```bash
 # osx
 ln -s ~/dotfiles/osx ~/.osx
+ln -s ~/dotfiles/bash_profile ~/.bash_profile && ~/.bash_profile
 ```
 
 <h2>Use git keywords like svn?</h2>
