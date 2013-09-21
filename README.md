@@ -7,7 +7,7 @@
 <h2>Setup</h2>
 
 ```bash
-git clone git://github.com/ChoiZ/dotfiles.git ~/
+cd ~ && git clone git://github.com/ChoiZ/dotfiles.git
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
@@ -30,6 +30,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ```bash
 # osx
 ln -s ~/dotfiles/osx ~/.osx
+ln -s ~/dotfiles/bash_profile ~/.bash_profile && ~/.bash_profile
 ```
 
 <h2>Use git keywords like svn?</h2>

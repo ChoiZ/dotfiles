@@ -1,4 +1,4 @@
-# ~/.osx
+
 # Last modified: 2013-03-07
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
@@ -109,5 +109,5 @@ defaults write com.apple.Mail DisableReplyAnimations -bool YES
 
 ## Software update
 
- Change the frequency of software updates checks (10.8)
+# Change the frequency of software updates checks (10.8)
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ScheduleFrequency 1
