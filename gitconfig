@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2013-08-03
+# Last modified: 2013-09-20
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -22,19 +22,24 @@
   st = status
   di = diff
   ph = push
+  pom = push origin master
   pl = pull
   me = merge
   menoff = merge --no-ff
+  last = cat-file commit HEAD
+  # submodule
+  subpl = submodule foreach git pull
+  #stash
   sta = stash
   stalist = stash list
   stast = stash list
-  stapp = stash pop 
-  starm = stash drop 
-  last = cat-file commit HEAD
+  stapp = stash pop
+  starm = stash drop
+  # log
   graph = log --graph --decorate
   tree = log --graph --oneline --decorate
-  pom = push origin master
   logs = log --stat
+  # branch
   currentbranch = "!git branch | grep ^* | cut -d \" \" -f 2"
   cleanbr = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
 [core]
