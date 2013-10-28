@@ -5,7 +5,7 @@
 # Edited by: François LASSERRE <choiz@me.com>
 
 ########################################################################
-# Original source: https://github.com/matthewmccullough/dotfiles/blob/master/bash_profile
+# Original source: https://github.com/matthewmccullough/dotfiles/blob/master/bash_gitprompt
 # Matthew's Git Bash Prompt
 ########################################################################
         RED="\[\033[0;31m\]"
