@@ -1,5 +1,5 @@
 # ~/.bashrc
-# Last modified: 2013-08-03
+# Last modified: 2013-10-28
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -36,6 +36,6 @@ fi
 [[ -s ~/dotfiles/bash_colors ]] && source ~/dotfiles/bash_colors
 
 # Add Git in prompt
-[[ -s ~/dotfiles/git-prompt ]] && source ~/dotfiles/git-prompt
+[[ -s ~/dotfiles/bash_gitprompt ]] && source ~/dotfiles/bash_gitprompt
 
-export PS1="\[$Green\]\t \[$Blue\]\u@\h \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "
+#export PS1="\[$Green\]\t \[$Blue\]\u@\h \[$Yellow\]\[$Yellow\]\w\[\033[m\]\[$Purple\]\$(__git_ps1)\[$White\]\$ "

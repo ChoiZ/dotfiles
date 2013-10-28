@@ -15,10 +15,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "ChoiZbook Air"
-sudo scutil --set HostName "ChoiZbook Air"
-sudo scutil --set LocalHostName "ChoiZbook-Air"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ChoiZbook-Air"
+sudo scutil --set ComputerName "ChoiZ's iMac"
+sudo scutil --set HostName "ChoiZ's iMac"
+sudo scutil --set LocalHostName "ChoiZs-iMac"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ChoiZs-iMac"
 
 # Set the icon size of Dock items to 45 pixels
 defaults write com.apple.dock tilesize -int 45
@@ -76,7 +76,7 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 ## Finder
 
 # Show hidden files in OS X Finder (10.5, 10.6, 10.7, 10.8)
-defaults write com.apple.Finder AppleShowAllFiles -bool true
+defaults write com.apple.Finder AppleShowAllFiles -bool false
 
 # Display the file extensions in Finder (10.5, 10.6, 10.7, 10.8)
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
