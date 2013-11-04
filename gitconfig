@@ -57,3 +57,5 @@
 [filter "rcs-keywords"]
   clean = ~/dotfiles/git_filters/rcs-keywords.clean
   smudge = ~/dotfiles/git_filters/rcs-keywords.smudge %f
+[grep]
+  lineNumber = true
