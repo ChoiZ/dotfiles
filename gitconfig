@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2013-09-20
+# Last modified: 2014-01-08
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -16,19 +16,16 @@
   ui = true
 [alias]
   br = branch
-  ci = commit -a
   co = checkout
   sh = show --color-words
   st = status
   di = diff
-  ph = push
   pom = push origin master
-  pl = pull
   me = merge
   menoff = merge --no-ff
   last = cat-file commit HEAD
   # submodule
-  subpl = submodule foreach git pull
+  subpull = submodule foreach git pull
   #stash
   sta = stash
   stalist = stash list
@@ -37,8 +34,9 @@
   starm = stash drop
   # log
   graph = log --graph --decorate
+  graphs = log --graph --decorate --stat
   tree = log --graph --oneline --decorate
-  logs = log --stat
+  logs = log --stat --decorate
   # branch
   currentbranch = "!git branch | grep ^* | cut -d \" \" -f 2"
   cleanbr = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
