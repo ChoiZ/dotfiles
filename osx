@@ -1,7 +1,7 @@
-# Last modified: 2013-10-28
+#!/bin/bash
+# Last modified: 2014-01-09
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
-#!/bin/bash
 
 # Ask for the administrator password upfront
 sudo -v
@@ -26,7 +26,7 @@ defaults write com.apple.dock tilesize -int 45
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Change the default location for screenshots in Mac OS X (10.5, 10.6, 10.7, 10.8)
-defaults write com.apple.screencapture location ~/screenshot
+defaults write com.apple.screencapture location ~/Desktop/screenshot
 
 # Disable the creation of .DS_store files (10.5, 10.6, 10.7, 10.8)
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
@@ -89,9 +89,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 ## TimeMachine
 
 # Setup a size limit for Time Machine backup volumes [102400 = 100GB] (10.5, 10.6, 10.7, 10.8)
-sudo defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
+#sudo defaults write /Library/Preferences/com.apple.TimeMachine MaxSize 102400
 # remove the limit
-# defaults delete /Library/Preferences/com.apple.TimeMachine MaxSize
+#defaults delete /Library/Preferences/com.apple.TimeMachine MaxSize
 
 ## Twitter App
 
