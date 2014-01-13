@@ -7,7 +7,7 @@ Config files for (bash, git, screen, tmux, osx & zsh)
 ## Setup
 
 ```bash
-cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && git submodule init && git submodule update
+cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && cd dotfiles && git submodule init && git submodule update
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
