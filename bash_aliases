@@ -37,7 +37,7 @@ alias py=python
 # Vim
 alias v=vim
 alias vi=vim
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias :q=exit
 
 ## less indent = 4
