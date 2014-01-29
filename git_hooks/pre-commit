@@ -127,10 +127,10 @@ if [ -n "$error" ]; then
 	    echo
     fi
     if [ "$checkphp" == "true" ]; then
-    	echo "  git config --global --add hooks.checkphp true"
+    	echo "  git config --global --add hooks.checkphp false"
     fi
     if [ "$checkjs" == "true" ]; then
-	    echo "  git config --global --add hooks.checkjs true"
+	    echo "  git config --global --add hooks.checkjs false"
     fi
 	echo
     exit 1
