@@ -13,6 +13,21 @@ ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
 ```
 
+### Git User?
+```bash
+cp ~/dotfiles/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
+
+#### Enable PHP check
+```bash
+git config hooks.checkphp
+```
+
+#### Enable JS check
+```bash
+git config hooks.checkjs
+```
+
 ### You use tmux?
 ```bash
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
