@@ -15,7 +15,7 @@ ln -s ~/dotfiles/gitignore ~/.gitignore
 
 ### Git User?
 ```bash
-cp ~/dotfiles/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+ln -s ~/dotfiles/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
 #### Enable PHP check
