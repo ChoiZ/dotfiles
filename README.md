@@ -20,12 +20,12 @@ cp ~/dotfiles/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/
 
 #### Enable PHP check
 ```bash
-git config hooks.checkphp
+git config hooks.checkphp true
 ```
 
 #### Enable JS check
 ```bash
-git config hooks.checkjs
+git config hooks.checkjs true
 ```
 
 ### You use tmux?
