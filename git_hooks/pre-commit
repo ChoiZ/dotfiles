@@ -1,5 +1,5 @@
 #!/bin/sh
-# Last modified: 2014-01-29
+# Last modified: 2014-01-30
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -11,8 +11,8 @@ else
 	against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
 fi
 
-checkphp=$(git config hooks.checkphp)
-checkjs=$(git config hooks.checkjs)
+checkphp=$(git config --global --get hooks.checkphp)
+checkjs=$(git config --global --get hooks.checkjs)
 
 # Redirect output to stderr.
 exec 1>&2
@@ -127,10 +127,10 @@ if [ -n "$error" ]; then
 	    echo
     fi
     if [ "$checkphp" == "true" ]; then
-    	echo "  git config hooks.checkphp false"
+    	echo "  git config --global --add hooks.checkphp true"
     fi
     if [ "$checkjs" == "true" ]; then
-	    echo "  git config hooks.checkjs false"
+	    echo "  git config --global --add hooks.checkjs true"
     fi
 	echo
     exit 1
