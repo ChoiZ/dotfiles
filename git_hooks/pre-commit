@@ -17,7 +17,6 @@ checkjs=$(git config --global --get hooks.checkjs)
 # Redirect output to stderr.
 exec 1>&2
 
-files=$(git diff --cached --name-only --diff-filter=ACMRT $against)
 extensions=$(git diff --cached --name-only --diff-filter=ACMRT $against | rev | cut -d . -f1 | rev | sort | uniq)
 path=$(pwd)
 

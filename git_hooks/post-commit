@@ -12,13 +12,14 @@ else
 fi
 
 git_rev=$(git rev-parse $against)
+path=$(pwd)
 
-if [ -f conf.php ]
+if [ -f $path/conf.php ]
 then
-    sed -i "" "s/rev=\".*\";/rev=\""$git_rev"\";/g" conf.php
+    sed -i "" "s/rev=\".*\";/rev=\""$git_rev"\";/g" $path/conf.php
 else
-    cat > conf.php <<EOF
+    cat > $path/conf.php <<EOF
 <?php
-\$rev="";
+\$rev="$git_rev";
 EOF
 fi
