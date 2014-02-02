@@ -33,7 +33,14 @@ git config --global --add hooks.checkjs true
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
 
-### On OSX?
+### Linux
+(execute as root)
+```bash
+cp ~/dotfiles/Monaco-Powerline.otf /usr/share/fonts/
+fc-cache -vf
+```
+
+### Mac OS 10
 ```bash
 # osx
 ln -s ~/dotfiles/osx ~/.osx
