@@ -11,6 +11,13 @@ cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && cd dotfiles && git subm
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/osx ~/.osx
+ln -s ~/dotfiles/bash_profile ~/.bash_profile && ~/.bash_profile
+```
+
+### You use tmux?
+```bash
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
 
 ### Git User?
@@ -26,25 +33,6 @@ git config --global --add hooks.checkphp true
 #### Enable JS check
 ```bash
 git config --global --add hooks.checkjs true
-```
-
-### You use tmux?
-```bash
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-```
-
-### Linux
-(execute as root)
-```bash
-cp ~/dotfiles/Monaco-Powerline.otf /usr/share/fonts/
-fc-cache -vf
-```
-
-### Mac OS 10
-```bash
-# osx
-ln -s ~/dotfiles/osx ~/.osx
-ln -s ~/dotfiles/bash_profile ~/.bash_profile && ~/.bash_profile
 ```
 
 ## Use git keywords like svn?
