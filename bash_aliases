@@ -1,5 +1,5 @@
 # ~/.bash_aliases
-# Last modified: 2014-01-08
+# Last modified: 2014-02-02
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -21,8 +21,9 @@ fi
 
 alias du='du -h --max-depth=1'
 alias df='df -h'
-alias dl='cd ~/Download'
+alias dl='cd ~/Downloads'
 alias doc='cd ~/Documents'
+alias repo='cd ~/Repos'
 alias l='ls -ahlF'
 alias ll='ls -ahlF'
 alias lh='ls -xAF'
@@ -37,7 +38,7 @@ alias py=python
 # Vim
 alias v=vim
 alias vi=vim
-#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias :q=exit
 
 ## less indent = 4
