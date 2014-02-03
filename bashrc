@@ -14,7 +14,7 @@ export SVN_MERGE=vimdiff
 [[ -s ~/dotfiles/bash_completion ]] && source ~/dotfiles/bash_completion
 
 # Git Completion
-[[ -s ~/dotfiles/git_completion ]] && source ~/dotfiles/git_completion
+[[ -s ~/dotfiles/git/git_completion ]] && source ~/dotfiles/git/git_completion
 
 # Functions
 [[ -s ~/dotfiles/bash_functions ]] && source ~/dotfiles/bash_functions
