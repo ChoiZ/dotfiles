@@ -29,7 +29,7 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 ## Git User?
 ```bash
-ln -s ~/dotfiles/git/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+ln -s ~/dotfiles/git/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
 ### Enable PHP check
