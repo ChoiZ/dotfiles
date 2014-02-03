@@ -1,5 +1,5 @@
 # ~/.bash_functions
-# Last modified: 2014-01-08
+# Last modified: 2014-02-03
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -87,10 +87,4 @@ chkphp() {
 getIp() {
   ip=`curl -s $1|tail -n1|cut -d " " -f3|base64 -D`
   echo $ip
-}
-
-# Route this Ip to VPN
-# @param ip $1
-routeToVpn() {
-  sudo route -v add -host $1 -interface ppp0
 }
