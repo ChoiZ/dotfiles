@@ -1,6 +1,6 @@
 # dotfiles
 
-Config files for (bash, git, screen, tmux, osx & zsh)
+Config files for (bash, git, tmux & osx)
 
 ![screenshot](https://raw.github.com/ChoiZ/dotfiles/gh-pages/screenshot.png)
 
@@ -9,8 +9,8 @@ Config files for (bash, git, screen, tmux, osx & zsh)
 ```bash
 cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && cd dotfiles && git submodule init && git submodule update
 ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/gitignore ~/.gitignore
 ln -s ~/dotfiles/osx ~/.osx
 ln -s ~/dotfiles/bash_profile ~/.bash_profile && ~/.bash_profile
 ```
@@ -22,7 +22,7 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 ### Git User?
 ```bash
-ln -s ~/dotfiles/git_hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+ln -s ~/dotfiles/git/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
 #### Enable PHP check
