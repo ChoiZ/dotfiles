@@ -19,9 +19,6 @@ export SVN_MERGE=vimdiff
 # Functions
 [[ -s ~/dotfiles/bash_functions ]] && source ~/dotfiles/bash_functions
 
-# SSH
-[[ -s ~/dotfiles/bash_ssh ]] && source ~/dotfiles/bash_ssh
-
 # Colors
 [[ -s ~/dotfiles/bash_colors ]] && source ~/dotfiles/bash_colors
 
