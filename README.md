@@ -9,8 +9,8 @@ Config files for (bash, git, tmux)
 ```bash
 cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && cd dotfiles && git submodule init && git submodule update
 ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/git/gitignore ~/.gitignore
+ln -s ~/dotfiles/git/config ~/.gitconfig
+ln -s ~/dotfiles/git/ignore ~/.gitignore
 ```
 
 (execute as root)
