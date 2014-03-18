@@ -7,6 +7,12 @@ Config files for (bash, git, tmux)
 ## Setup
 
 ```bash
+curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L > choiz-dotfiles.sh && sh choiz-dotfiles.sh
+```
+
+Or
+
+```bash
 sh <(curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L)
 ```
 
