@@ -7,15 +7,12 @@ Config files for (bash, git, tmux)
 ## Setup
 
 ```bash
-cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && cd dotfiles && git submodule init && git submodule update
-ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/git/config ~/.gitconfig
-ln -s ~/dotfiles/git/ignore ~/.gitignore
+sh <(curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L)
 ```
 
 (execute as root)
 ```bash
-cp ~/dotfiles/Monaco-Powerline.otf /usr/share/fonts/
+cp ~/.dotfiles/Monaco-Powerline.otf /usr/share/fonts/
 fc-cache -vf
 ```
 
@@ -24,12 +21,12 @@ check the "osx" branch.
 
 ## You use tmux?
 ```bash
-ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
 ## Git User?
 ```bash
-ln -s ~/dotfiles/git/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+ln -s ~/.dotfiles/git/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
 ### Enable PHP check
