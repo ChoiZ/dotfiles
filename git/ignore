@@ -29,6 +29,9 @@ Icon
 # SVN
 .svn/
 
+# Node
+node_modules
+
 # Window$
 ## Windows image file caches
 Thumbs.db
