@@ -23,7 +23,7 @@ alias du='du -h --max-depth=1'
 alias df='df -h'
 alias dl='cd ~/Downloads'
 alias doc='cd ~/Documents'
-alias repo='cd ~/Repos'
+alias rep='cd ~/Repos'
 alias l='ls -ahlF'
 alias ll='ls -ahlF'
 alias lh='ls -xAF'
@@ -35,12 +35,12 @@ alias ps='ps -aux'
 # Dev
 alias g=git
 alias gitdir='echo `git rev-parse --git-dir`'
+alias p=php
 alias ph=php
 alias py=python
 # Vim
 alias v=vim
 alias vi=vim
-alias :q=exit
 
 ## less indent = 4
 alias less='less -x4'
