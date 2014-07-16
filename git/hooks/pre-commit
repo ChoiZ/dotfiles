@@ -1,14 +1,14 @@
 #!/bin/sh
-# Last modified: 2014-01-30
+# Last modified: 2014-07-16
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 if git rev-parse --verify HEAD >/dev/null 2>&1
 then
-	against=HEAD
+    against=HEAD
 else
-	# Initial commit: diff against an empty tree object
-	against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
+    # Initial commit: diff against an empty tree object
+    against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
 fi
 
 checkphp=$(git config --global --get hooks.checkphp)
@@ -120,18 +120,18 @@ if [ -n "$error" ]; then
     echo "-------------------------------"
     echo "Can't commit, fix errors first."
     echo "-------------------------------"
-	echo
+    echo
     if [ "$checkphp" == "true" ] || [ "$checkjs" == "true" ]; then
-	    echo "If you know what you are doing you can disable this checks using:"
-	    echo
+        echo "If you know what you are doing you can disable this checks using:"
+        echo
     fi
     if [ "$checkphp" == "true" ]; then
-    	echo "  git config --global --add hooks.checkphp false"
+        echo "  git config --global --add hooks.checkphp false"
     fi
     if [ "$checkjs" == "true" ]; then
-	    echo "  git config --global --add hooks.checkjs false"
+        echo "  git config --global --add hooks.checkjs false"
     fi
-	echo
+    echo
     exit 1
 fi
 
