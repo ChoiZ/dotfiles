@@ -88,3 +88,9 @@ getIp() {
   ip=`curl -s $1|tail -n1|cut -d " " -f3|base64 -D`
   echo $ip
 }
+
+# Route this Ip to VPN
+# @param ip $1
+routeToVpn() {
+    sudo route -v add -host $1 -interface ppp0
+}
