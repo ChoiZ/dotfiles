@@ -35,7 +35,7 @@
   # log
   graph = log --graph --decorate
   graphs = log --graph --decorate --stat
-  tree = log --graph --oneline --decorate
+  tree = log --graph --format='%h %s %n %cd' --decorate --stat
   logs = log --stat --decorate
   # branch
   currentbranch = "!git branch | grep ^* | cut -d \" \" -f 2"
@@ -44,6 +44,7 @@
   excludesfile = ~/.gitignore
   editor = vim
   filemode = false
+  pager = less -r
 [push]
   default = current
 [merge]
