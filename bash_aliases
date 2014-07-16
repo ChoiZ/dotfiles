@@ -28,6 +28,7 @@ alias l='ls -ahlF'
 alias ll='ls -ahlF'
 alias lh='ls -xAF'
 alias lv='ls -1AF'
+alias tree='tree -C'
 alias mv='mv -i'
 alias p=pwd
 alias ps='ps -aux'
