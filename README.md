@@ -1,6 +1,6 @@
 # dotfiles
 
-Config files for (bash, git, tmux)
+Config files for (bash, git, tmux & vim)
 
 ![screenshot](https://raw.github.com/ChoiZ/dotfiles/gh-pages/dotfiles.png)
 
@@ -19,40 +19,42 @@ sh <(curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L)
 Or:
 
 ```bash
-cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && ./dotfiles/bootstrap.sh
+cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && ./dotfiles/bootstrap.sh && rm -rf ~/dotfiles
 ```
 
 ## Setup Monaco-Powerline font
+
 (execute as root)
 ```bash
 cp ~/.dotfiles/Monaco-Powerline.otf /usr/share/fonts/
 fc-cache -vf
 ```
 
-## You are on Mac OS 10?
-## - check the "osx" branch.
+## Misc
 
-## You use tmux?
+If you are on Mac Os 10 check the "osx" branch.
+
+If you use tmux:
 ```bash
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
-## Git User?
+If you use git:
 ```bash
 ln -s ~/.dotfiles/git/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
-### Enable PHP check
+If you want to enable PHP check hook:
 ```bash
 git config --global --add hooks.checkphp true
 ```
 
-### Enable JS check
+If you want to enable Javascript check hook:
 ```bash
 git config --global --add hooks.checkjs true
 ```
 
-### Use git keywords like svn?
+If you want to use git keywords like svn:
 
 Add in your php files:
 
@@ -68,7 +70,7 @@ Add in your php files:
  */
 ```
 
-Create a .gitattributes file in your repos
+Create a ".gitattributes" file in your repos like:
 
 ```bash
 *.css filter=rcs-keywords
