@@ -10,20 +10,27 @@ Config files for (bash, git, tmux)
 curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L > choiz-dotfiles.sh && sh choiz-dotfiles.sh
 ```
 
-Or
+Or:
 
 ```bash
 sh <(curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L)
 ```
 
+Or:
+
+```bash
+cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && ./dotfiles/bootstrap.sh
+```
+
+## Setup Monaco-Powerline font
 (execute as root)
 ```bash
 cp ~/.dotfiles/Monaco-Powerline.otf /usr/share/fonts/
 fc-cache -vf
 ```
 
-## Mac OS 10
-check the "osx" branch.
+## You are on Mac OS 10?
+## - check the "osx" branch.
 
 ## You use tmux?
 ```bash
