@@ -2,7 +2,7 @@
 
 Config files for (bash, git, tmux)
 
-![screenshot](https://raw.github.com/ChoiZ/dotfiles/gh-pages/screenshot.png)
+![screenshot](https://raw.github.com/ChoiZ/dotfiles/gh-pages/dotfiles.png)
 
 ## Setup
 
