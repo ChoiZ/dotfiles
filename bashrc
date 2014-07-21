@@ -1,5 +1,5 @@
 # ~/.bashrc
-# Last modified: 2014-02-03
+# Last modified: 2014-07-21
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -22,5 +22,5 @@ export SVN_MERGE=vimdiff
 # Colors
 [[ -s ~/.dotfiles/bash_colors ]] && source ~/.dotfiles/bash_colors
 
-# Add Git in prompt
-source ~/.dotfiles/bash-git-prompt/gitprompt.sh
+# Enable Git in prompt
+[[ -s ~/.dotfiles/bash-git-prompt/gitprompt.sh ]] && source ~/.dotfiles/bash-git-prompt/gitprompt.sh
