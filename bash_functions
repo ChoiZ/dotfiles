@@ -94,3 +94,9 @@ getIp() {
 routeToVpn() {
     sudo route -v add -host $1 -interface ppp0
 }
+
+# Random password
+function randompass() {
+    < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c16
+    echo
+}
