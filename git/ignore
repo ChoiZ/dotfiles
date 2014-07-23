@@ -48,3 +48,4 @@ $RECYCLE.BIN/
 *.un~
 Session.vim
 .netrwhist
+doc/tags
