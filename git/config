@@ -23,6 +23,8 @@
     pom = push origin master
     me = merge
     menoff = merge --no-ff
+    merged = branch -r --merged origin/master
+    pruned = remote prune origin
     last = cat-file commit HEAD
     # submodule
     subpull = submodule foreach git pull
