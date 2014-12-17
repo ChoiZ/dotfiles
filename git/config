@@ -42,6 +42,7 @@
     # branch
     currentbranch = "!git branch | grep ^* | cut -d \" \" -f 2"
     cleanbr = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+    brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|prod\\|stage\"`; do echo `git show --format=\"%ai\\t%ar\\tby %an\\t\" $branch | head -n 1` $branch; done | sort -r"
 [core]
     excludesfile = ~/.gitignore
     editor = vim
