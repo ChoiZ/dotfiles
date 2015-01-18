@@ -1,0 +1,51 @@
+# ~/.gitignore
+# Last modified: 2013-08-03
+# Author: François LASSERRE <choiz@me.com>
+# License: GNU GPL http://www.gnu.org/licenses/gpl.html
+
+# Linux
+.*
+!.gitignore
+*~
+
+# Mercurial (hg)
+/.hg/*
+*/.hg/*
+.hgignore
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+## Thumbnails
+._*
+
+## Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# SVN
+.svn/
+
+# Node
+node_modules
+
+# Window$
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VIM
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+doc/tags

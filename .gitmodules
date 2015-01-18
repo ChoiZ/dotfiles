@@ -1,3 +1,9 @@
 [submodule "vim"]
 	path = vim
 	url = https://www.github.com/choiz/Vim-config
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/Choiz/prezto/
+[submodule "tmux/powerline"]
+	path = tmux/powerline
+	url = https://github.com/ChoiZ/tmux-powerline

@@ -1,0 +1,65 @@
+# ~/.gitconfig
+# Last modified: 2014-12-17
+# Author: François LASSERRE <choiz@me.com>
+# License: GNU GPL http://www.gnu.org/licenses/gpl.html
+
+[user]
+    name = François LASSERRE
+    email = choiz@me.com
+[diff]
+    tool = vimdiff
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    interactive = auto
+    ui = true
+[alias]
+    br = branch
+    co = checkout
+    sh = show --color-words
+    st = status
+    di = diff
+    pom = push origin master
+    me = merge
+    menoff = merge --no-ff
+    merged = branch -r --merged origin/master
+    pruned = remote prune origin
+    last = cat-file commit HEAD
+    # submodule
+    subpull = submodule foreach git pull
+    #stash
+    sta = stash
+    stalist = stash list
+    stast = stash list
+    stapp = stash pop
+    starm = stash drop
+    # log
+    graph = log --graph --decorate
+    graphs = log --graph --decorate --stat
+    tree = log --graph --format='%h %s %n %cd' --decorate --stat
+    logs = log --stat --decorate
+    # branch
+    brclean = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+    brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|prod\\|stage\"`; do echo `git show --format=\"%ai\\t%ar\\tby %an\\t\" $branch | head -n 1` $branch; done | sort -r"
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+    filemode = false
+    pager = less -r
+[push]
+    default = current
+[merge]
+    tool = vimdiff
+[http]
+    #sslverify = false
+[github]
+    user = ChoiZ
+[filter "rcs-keywords"]
+    clean = ~/dotfiles/git_filters/rcs-keywords.clean
+    smudge = ~/dotfiles/git_filters/rcs-keywords.smudge %f
+[grep]
+    lineNumber = true
+[hooks]
+    checkphp = true
+    checkjs = true

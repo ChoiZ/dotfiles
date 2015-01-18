@@ -1,0 +1,25 @@
+#!/bin/sh
+# Last modified: 2014-07-16
+# Author: François LASSERRE <choiz@me.com>
+# License: GNU GPL http://www.gnu.org/licenses/gpl.html
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+    against=HEAD
+else
+    # Initial commit: diff against an empty tree object
+    against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
+fi
+
+git_rev=$(git rev-parse --short $against)
+path=$(pwd)
+
+if [ -f $path/conf.php ]
+then
+    sed -i "" "s/rev=\".*\";/rev=\""$git_rev"\";/g" $path/conf.php
+else
+    cat > $path/conf.php <<EOF
+<?php
+\$rev="$git_rev";
+EOF
+fi
