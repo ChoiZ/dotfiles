@@ -4,7 +4,7 @@
     
     cd "${ZDOTDIR:-$HOME}/.dotfiles" && git checkout zsh
     
-    git submodule init && git pull submodule update
+    git submodule init && git submodule update
 
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/^README.md(.N); do
