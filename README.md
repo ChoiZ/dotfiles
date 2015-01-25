@@ -4,16 +4,14 @@
 
     cd "${ZDOTDIR:-$HOME}/.dotfiles" && git checkout zsh
 
-    git submodule update --init
-
-    ln -s "$HOME"/.dotfiles/prezto "$HOME"/.zprezto
+    git submodule update --init --recursive
 
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/rc/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
-    ln -s "${ZDOTDIR:-$HOME}"/.dotfiles/prezto "${ZDOTDIR:-$HOME}"/.prezto
+    ln -s "${ZDOTDIR:-$HOME}"/.dotfiles/prezto "${ZDOTDIR:-$HOME}"/.zprezto
     ln -s "${ZDOTDIR:-$HOME}"/.dotfiles/ssh "${ZDOTDIR:-$HOME}"/.ssh
     ln -s "${ZDOTDIR:-$HOME}"/.dotfiles/vim "${ZDOTDIR:-$HOME}"/.vim
     ln -s "${ZDOTDIR:-$HOME}"/.dotfiles/vim/vimrc "${ZDOTDIR:-$HOME}"/.vimrc
@@ -22,7 +20,11 @@
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
-    for rcfile in "${ZDOTDIR:-$HOME}"/.prezto/runcoms/^README.md(.N); do
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
+    chsh -s /bin/zsh
+
+    sudo cp "${ZDOTDIR:-$HOME}"/.dotfiles/fonts/Monaco-Powerline.otf /usr/share/fonts/
+    sudo fc-cache -vf
