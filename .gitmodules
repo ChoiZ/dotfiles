@@ -7,3 +7,6 @@
 [submodule "tmux/powerline"]
 	path = tmux/powerline
 	url = https://github.com/ChoiZ/tmux-powerline
+[submodule "git"]
+	path = git
+	url = https://github.com/ChoiZ/git-config.git
