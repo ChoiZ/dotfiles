@@ -1,10 +1,12 @@
 # dotfiles
 
     git clone --recursive https://github.com/choiz/dotfiles.git "${ZDOTDIR:-$HOME}/.dotfiles"
-    
+
     cd "${ZDOTDIR:-$HOME}/.dotfiles" && git checkout zsh
-    
-    git submodule init && git submodule update
+
+    git submodule update --init
+
+    ln -s "$HOME"/.dotfiles/prezto "$HOME"/.zprezto
 
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/rc/^README.md(.N); do
