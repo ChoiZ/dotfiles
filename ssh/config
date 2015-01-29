@@ -1,0 +1,2 @@
+Host *.veoprint.com *.interfaces.fr
+	IdentityFile ~/.ssh/veoprint
