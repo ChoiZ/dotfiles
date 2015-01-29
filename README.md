@@ -2,10 +2,6 @@
 
     git clone --recursive https://github.com/choiz/dotfiles.git "${ZDOTDIR:-$HOME}/.dotfiles"
 
-    cd "${ZDOTDIR:-$HOME}/.dotfiles" && git checkout zsh
-
-    git submodule update --init --recursive
-
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/rc/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
@@ -26,5 +22,7 @@
 
     chsh -s /bin/zsh
 
-    sudo cp "${ZDOTDIR:-$HOME}"/.dotfiles/fonts/Monaco-Powerline.otf /usr/share/fonts/
-    sudo fc-cache -vf
+## do it with root rights
+
+    cp /home/ [your_user] /.dotfiles/fonts/Monaco-Powerline.otf /usr/share/fonts/
+    fc-cache -vf
