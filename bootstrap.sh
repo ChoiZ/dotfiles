@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 app_name="dotfiles"
 app_dir="$HOME/.dotfiles"
-git_branch="master"
+git_branch="bash"
 [ -z "$git_uri" ] && git_uri="https://github.com/ChoiZ/$app_name.git"
 
 ############################  BASIC SETUP TOOLS
