@@ -7,19 +7,7 @@ Config files for (bash, git, tmux & vim)
 ## Setup
 
 ```bash
-curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L > choiz-dotfiles.sh && sh choiz-dotfiles.sh
-```
-
-Or:
-
-```bash
-sh <(curl https://raw.github.com/ChoiZ/dotfiles/master/bootstrap.sh -L)
-```
-
-Or:
-
-```bash
-cd ~ && git clone git://github.com/ChoiZ/dotfiles.git && ./dotfiles/bootstrap.sh && rm -rf ~/dotfiles
+git clone https://github.com/ChoiZ/dotfiles.git ~/.dotfiles && cd .dotfiles/ && git checkout bash && ./bootstrap.sh 
 ```
 
 ## Setup Monaco-Powerline font
