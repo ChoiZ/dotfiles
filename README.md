@@ -7,7 +7,7 @@ Config files for (bash, git, tmux & vim)
 ## Setup
 
 ```bash
-git clone https://github.com/ChoiZ/dotfiles.git ~/.dotfiles && cd .dotfiles/ && git checkout bash && ./bootstrap.sh 
+git clone https://github.com/ChoiZ/dotfiles.git ~/.dotfiles && cd ~/.dotfiles/ && git checkout bash && ./bootstrap.sh
 ```
 
 ## Setup Monaco-Powerline font
