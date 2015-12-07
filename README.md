@@ -14,7 +14,7 @@ git clone https://github.com/ChoiZ/dotfiles.git ~/.dotfiles && cd ~/.dotfiles/ &
 
 (execute as root)
 ```bash
-cp ~/.dotfiles/Monaco-Powerline.otf /usr/share/fonts/
+cp ~/.dotfiles/fonts/Monaco-Powerline.otf /usr/share/fonts/
 fc-cache -vf
 ```
 
