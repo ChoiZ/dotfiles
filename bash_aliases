@@ -12,7 +12,6 @@ alias clr=clear
 # Colors: enable color support for ls and grep when possible
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
   COLOR_TERM=yes
-  export GREP_OPTIONS='--color=auto'
   ls --color -d . &>/dev/null 2>&1 && alias ls='ls --group-directories-first --color=auto'
 else
   COLOR_TERM=
