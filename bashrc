@@ -1,8 +1,9 @@
 # ~/.bashrc
-# Last modified: 2014-08-21
+# Last modified: 2015-12-09
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
+export TERM=xterm-256color
 export EDITOR=vim
 export SVN_EDITOR=vim
 export SVN_MERGE=vimdiff
