@@ -1,5 +1,5 @@
 # ~/.bash_aliases
-# Last modified: 2014-02-04
+# Last modified: 2015-12-09
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -19,7 +19,7 @@ else
   alias ls='ls --group-directories-first -ahlF'
 fi
 
-alias du='du -h --max-depth=1'
+alias du='du -h'
 alias df='df -h'
 alias dl='cd ~/Downloads'
 alias doc='cd ~/Documents'
