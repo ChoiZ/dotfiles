@@ -1,9 +1,6 @@
 [submodule "bash-git-prompt"]
 	path = bash-git-prompt
 	url = https://github.com/ChoiZ/bash-git-prompt
-[submodule "tmux/powerline"]
-	path = tmux/powerline
-	url = https://github.com/ChoiZ/tmux-powerline.git
 [submodule "vim"]
 	path = vim
 	url = https://github.com/ChoiZ/Vim-config.git
