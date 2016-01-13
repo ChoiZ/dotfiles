@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2014-12-17
+# Last modified: 2016-01-13
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -47,6 +47,8 @@
     editor = vim
     filemode = false
     pager = less -r
+[pager]
+    grep = false
 [push]
     default = current
 [merge]
