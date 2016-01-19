@@ -1,5 +1,5 @@
 # ~/.bash_aliases
-# Last modified: 2015-12-09
+# Last modified: 2015-01-19
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -31,6 +31,7 @@ alias tree='tree -C'
 alias mv='mv -i'
 alias p=pwd
 alias ps='ps -aux'
+alias lo='xscreensaver-command -lock'
 # Dev
 alias g=git
 alias gitdir='echo `git rev-parse --git-dir`'
