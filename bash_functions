@@ -1,5 +1,5 @@
 # ~/.bash_functions
-# Last modified: 2014-07-16
+# Last modified: 2015-01-19
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -85,7 +85,7 @@ chkphp() {
 # @param url $1
 # get page with content like "my ip MTI3LjAuMC4x" MTI3LjAuMC4x == 127.0.0.1 base64
 getIp() {
-  ip=`curl -s $1|tail -n1|cut -d " " -f3|base64 -D`
+  ip=`curl -s $1|tail -n1|cut -d " " -f3|base64 -d`
   echo $ip
 }
 
