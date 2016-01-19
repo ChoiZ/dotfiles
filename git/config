@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2016-01-13
+# Last modified: 2016-01-19
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -40,6 +40,10 @@
     tree = log --graph --format='%ar %h %s %cd' --decorate --stat
     logs = log --stat --decorate
     # branch
+    # current branch
+    cb = rev-parse --abbrev-ref HEAD
+    # branch source
+    brs = !"git show-branch -a | ack '\\*' | ack -v \"`git cb`\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//'"
     brclean = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
     brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|develop\\|release\"`; do echo `git show --format=\"%ai %ar by %an\" $branch | head -n 1` $branch; done | sort -r"
 [core]
