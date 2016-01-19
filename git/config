@@ -37,11 +37,11 @@
     # log
     graph = log --graph --decorate
     graphs = log --graph --decorate --stat
-    tree = log --graph --format='%h %s %n %cd' --decorate --stat
+    tree = log --graph --format='%ar %h %s %cd' --decorate --stat
     logs = log --stat --decorate
     # branch
     brclean = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
-    brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|prod\\|stage\"`; do echo `git show --format=\"%ai\\t%ar\\tby %an\\t\" $branch | head -n 1` $branch; done | sort -r"
+    brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|develop\\|release\"`; do echo `git show --format=\"%ai %ar by %an\" $branch | head -n 1` $branch; done | sort -r"
 [core]
     excludesfile = ~/.gitignore
     editor = vim
