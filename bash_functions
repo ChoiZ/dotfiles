@@ -92,7 +92,7 @@ getIp() {
 # Route this Ip to VPN
 # @param ip $1
 routeToVpn() {
-    sudo route -v add -host $1 -interface ppp0
+  sudo route -v add -host $1 -interface ppp0
 }
 
 # Random password

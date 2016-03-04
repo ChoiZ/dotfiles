@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2016-01-19
+# Last modified: 2016-01-25
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -17,6 +17,7 @@
 [alias]
     br = branch
     co = checkout
+    cp = cherry-pick
     sh = show --color-words
     st = status
     di = diff
@@ -24,6 +25,7 @@
     me = merge
     menoff = merge --no-ff
     merged = branch -r --merged origin/master
+    mergedev = branch -r --merged origin/develop
     pruned = remote prune origin
     last = cat-file commit HEAD
     # submodule
@@ -35,14 +37,14 @@
     stapp = stash pop
     starm = stash drop
     # log
+    logs = log --stat --decorate
     graph = log --graph --decorate
     graphs = log --graph --decorate --stat
     tree = log --graph --format='%ar %h %s %cd' --decorate --stat
-    logs = log --stat --decorate
     # branch
-    # current branch
+     # current branch
     cb = rev-parse --abbrev-ref HEAD
-    # branch source
+     # branch source
     brs = !"git show-branch -a | ack '\\*' | ack -v \"`git cb`\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//'"
     brclean = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
     brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|develop\\|release\"`; do echo `git show --format=\"%ai %ar by %an\" $branch | head -n 1` $branch; done | sort -r"
