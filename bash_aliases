@@ -41,6 +41,7 @@ alias py=python
 # Vim
 alias v=vim
 alias vi=vim
+alias tmux="tmux -2"
 
 ## less indent = 4
 alias less='less -x4'
