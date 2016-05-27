@@ -1,0 +1,10 @@
+#!/bin/sh
+
+tmux -2 new -d -c "$HOME" -n "root" -s "dev"
+tmux send-keys -t dev:root su Enter
+tmux neww -c "$HOME/devbox/www/manomano" -n "dev"
+tmux neww -c "$HOME/devbox" -n "vagrant"
+tmux send-keys -t dev:vagrant "vagrant up" Enter
+tmux neww -c "$HOME" -n "preprod"
+tmux send-keys -t dev:preprod preprod Enter
+tmux attach
