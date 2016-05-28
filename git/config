@@ -1,5 +1,5 @@
 # ~/.gitconfig
-# Last modified: 2016-01-19
+# Last modified: 2016-05-28
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -50,7 +50,7 @@
     excludesfile = ~/.gitignore
     editor = vim
     filemode = false
-    pager = less -r
+    pager ="less -FRSX"
 [pager]
     grep = false
 [push]
@@ -59,8 +59,6 @@
     tool = vimdiff
 [http]
     #sslverify = false
-[github]
-    user = ChoiZ
 [filter "rcs-keywords"]
     clean = ~/dotfiles/git_filters/rcs-keywords.clean
     smudge = ~/dotfiles/git_filters/rcs-keywords.smudge %f
