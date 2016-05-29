@@ -5,6 +5,10 @@ export PATH=/opt/bin:$PATH
 xset -dpms
 xset s 600
 
+export TERM=xterm-256color
+export EDITOR=vim
+export VISUAL=vim
+
 #tint2 &
 parcellite &
 #wicd-client --tray &
@@ -20,6 +24,6 @@ then
     sh ~/.dotfiles/screenlayout/desktop.sh
 fi
 
-feh --bg-fill ~/.dotfiles/wallpaper/ &
+feh --bg-fill ~/.dotfiles/i3/wallpaper/ &
 
 exec $1
