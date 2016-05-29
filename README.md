@@ -8,13 +8,13 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Interface
 
-+ **i3wm** _window manager_
-+ **py3status** _status bar_ Python bar for i3wm (replace i3bar)
-+ **i3lock** _lock screen_
++ **I3wm** _window manager_
++ **I3lock** _lock screen_
++ **Py3status** _status bar_ Python bar for i3wm (replace i3bar)
 
 ### Internet
 
-+ **firefox** _web browser_
++ **Firefox** _web browser_
     + **ColorZilla** _color extension_ Color picker, gradient generator and
     other colorful goodies.
     + **Firebug** _web developper extension_ Web development tools: edit debug
@@ -24,28 +24,28 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
     + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web
     server (Apache, Nginx…) thanks to HTTP Headers or page content.
     + **Yslow** _Performance tool_ Make your pages faster thanks to Yslow.
-+ **google chrome** _web browser_
++ **Google Chrome** _web browser_
 
 ### Media
 
-+ **clementine** _music player_ audio player
-+ **feh** _image viewer_
-+ **imagemagick** _image tool_
-+ **ffmpeg** _audio/video tool_
-+ **scrot** _screenshoter_
-+ **vlc** _media player_ audio and video player
++ **Clementine** _music player_ audio player
++ **Feh** _image viewer_
++ **Ffmpeg** _audio/video tool_
++ **Imagemagick** _image tool_
++ **Scrot** _screenshoter_
++ **Vlc** _media player_ audio and video player
 
 ### Programming
 
-+ **vim** _text editor_
++ **Vim** _text editor_
 
 ### Terminal
 
-+ **terminator** _terminal emulator_
-+ **zsh** _shell_ powerfull shell
-+ **tmux** _terminal multiplexer_
-+ **dmenu** _dynamic menu_ application launcher
-+ **ranger** _file manager_ extensible file manager using vim keymaps
++ **Dmenu** _dynamic menu_ application launcher
++ **Ranger** _file manager_ extensible file manager using vim keymaps
++ **Terminator** _terminal emulator_
++ **Tmux** _terminal multiplexer_
++ **Zsh** _shell_ powerfull shell
 
 ## Setup
 
