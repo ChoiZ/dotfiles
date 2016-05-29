@@ -8,8 +8,8 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Interface
 
-+ **i3wm _window manager_
-+ ****py3status** _status bar_ Python bar for i3wm (replace i3bar)
++ **i3wm** _window manager_
++ **py3status** _status bar_ Python bar for i3wm (replace i3bar)
 + **i3lock** _lock screen_
 
 ### Internet
@@ -21,7 +21,7 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 + **clementine** _music player_ audio player
 + **feh** _image viewer_
-+ **imagemagick**_ image tool_
++ **imagemagick** _image tool_
 + **ffmpeg** _audio/video tool_
 + **scrot** _screenshoter_
 + **vlc** _media player_ audio and video player
