@@ -27,9 +27,7 @@ do
             if [ "$checkphp" == "true" ]
             then
                 files=$(git diff --cached --name-only --diff-filter=ACMRT $against | grep .php)
-                echo "-------------------"
-                echo "Checking php files…"
-                echo "-------------------"
+                echo "> Checking php files…"
                 echo
                 for file in $files
                 do
@@ -83,9 +81,7 @@ do
             if [ "$checkjs" == "true" ]
             then
                 files=$(git diff --cached --name-only --diff-filter=ACMRT $against | grep .js)
-                echo "-------------------"
-                echo "Checking js files…"
-                echo "-------------------"
+                echo "> Checking js files…"
                 echo
                 for file in $files
                 do
@@ -117,9 +113,7 @@ do
 done
 
 if [ -n "$error" ]; then
-    echo "-------------------------------"
-    echo "Can't commit, fix errors first."
-    echo "-------------------------------"
+    echo "> Can't commit, fix errors first!"
     echo
     if [ "$checkphp" == "true" ] || [ "$checkjs" == "true" ]; then
         echo "If you know what you are doing you can disable this checks using:"
