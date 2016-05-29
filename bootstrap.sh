@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 app_name="dotfiles"
 app_dir="$HOME/.dotfiles"
-git_branch="bash"
+git_branch="zsh"
 [ -z "$git_uri" ] && git_uri="https://github.com/ChoiZ/$app_name.git"
 
 ############################  BASIC SETUP TOOLS
@@ -101,12 +101,16 @@ create_backup() {
 create_symlinks() {
     endpath="$app_dir"
 
-    lnif "$endpath/bashrc"          "$HOME/.bashrc"
-    lnif "$endpath/bash_profile"    "$HOME/.bash_profile"
-    lnif "$endpath/git/config"      "$HOME/.gitconfig"
-    lnif "$endpath/git/ignore"      "$HOME/.gitignore"
-    lnif "$endpath/vim"             "$HOME/.vim"
-    lnif "$endpath/vim/vimrc"       "$HOME/.vimrc"
+    lnif "$endpath/bashrc"              "$HOME/.bashrc"
+    lnif "$endpath/bash_profile"        "$HOME/.bash_profile"
+    lnif "$endpath/i3/config"           "$HOME/.i3/config"
+    lnif "$endpath/i3/i3status.conf"    "$HOME/.i3/i3status.conf"
+    lnif "$endpath/git/config"          "$HOME/.gitconfig"
+    lnif "$endpath/git/ignore"          "$HOME/.gitignore"
+    lnif "$endpath/ranger/rc.conf"      "$HOME/.config/ranger/rc.conf"
+    lnif "$endpath/terminator/config"   "$HOME/.config/terminator/config"
+    lnif "$endpath/vim"                 "$HOME/.vim"
+    lnif "$endpath/vim/vimrc"           "$HOME/.vimrc"
 
     ret="$?"
     success "$1"
