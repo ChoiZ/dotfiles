@@ -15,6 +15,15 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 ### Internet
 
 + **firefox** _web browser_
+    + **ColorZilla** _color extension_ Color picker, gradient generator and
+    other colorful goodies.
+    + **Firebug** _web developper extension_ Web development tools: edit debug
+    and monitor CSS, HTML and JavaScript live.
+    + **Focus Regainer Lite** _get focus_ Keep focus on embedded object.
+    + **REST Easy** _Rest Client_ A simple REST client for Firefox.
+    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web
+    server (Apache, Nginx…) thanks to HTTP Headers or page content.
+    + **Yslow** _Performance tool_ Make your pages faster thanks to Yslow.
 + **google chrome** _web browser_
 
 ### Media
