@@ -8,8 +8,8 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Interface
 
-+ **I3wm** _window manager_
-+ **I3lock** _lock screen_
++ **i3wm** _window manager_
++ **i3lock** _lock screen_
 + **Py3status** _status bar_ Python bar for i3wm (replace i3bar)
 
 ### Internet
