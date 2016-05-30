@@ -48,6 +48,7 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 ### Terminal
 
 + **Dmenu** _dynamic menu_ application launcher
++ [**k**](https://github.com/supercrabtree/k) _directory listings like ls_ Directory listings for zsh with git features
 + **Ranger** _file manager_ extensible file manager using vim keymaps
 + **Terminator** _terminal emulator_
 + **Tmux** _terminal multiplexer_
