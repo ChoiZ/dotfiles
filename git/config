@@ -42,9 +42,9 @@
     graphs = log --graph --decorate --stat
     tree = log --graph --format='%ar %h %s %cd' --decorate --stat
     # branch
-     # current branch
+    # current branch
     cb = rev-parse --abbrev-ref HEAD
-     # branch source
+    # branch source
     brs = !"git show-branch -a | ack '\\*' | ack -v \"`git cb`\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//'"
     brclean = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
     brlist = "!for branch in `git branch -r | grep -v \"HEAD\\|master\\|develop\\|release\"`; do echo `git show --format=\"%ai %ar by %an\" $branch | head -n 1` $branch; done | sort -r"
