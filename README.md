@@ -30,8 +30,8 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 + **Clementine** _music player_ audio player
 + **Feh** _image viewer_
-+ **Ffmpeg** _audio/video tool_
-+ **Imagemagick** _image tool_
++ **ffmpeg** _audio/video tool_
++ **imagemagick** _image tool_
 + **Scrot** _screenshoter_
 + **Vlc** _media player_ audio and video player
 
