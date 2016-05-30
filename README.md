@@ -25,6 +25,12 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
     server (Apache, Nginx…) thanks to HTTP Headers or page content.
     + **Yslow** _Performance tool_ Make your pages faster thanks to Yslow.
 + **Google Chrome** _web browser_
+    + **Google Hangout** _Google im_
+    + **Unlimited Free VPN - Hola** _VPN_ Add VPN into Chrome.
+    + **Postman** _Rest Client_ Build, test, and document your APIs faster.
+    + **Save to Pocket** _Bookmarks online_
+    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web
+    server (Apache, Nginx…) thanks to HTTP Headers or page content.
 
 ### Media
 
