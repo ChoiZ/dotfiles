@@ -8,29 +8,25 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Interface
 
-+ **i3wm** _window manager_
++ [**i3wm**](http://i3wm.org/) _window manager_
 + **i3lock** _lock screen_
-+ **Py3status** _status bar_ Python bar for i3wm (replace i3bar)
++ [**Py3status**](https://github.com/ultrabug/py3status) _status bar_ Python bar for i3wm (replace i3bar) by ultrabug.
 
 ### Internet
 
 + **Firefox** _web browser_
-    + **ColorZilla** _color extension_ Color picker, gradient generator and
-    other colorful goodies.
-    + **Firebug** _web developper extension_ Web development tools: edit debug
-    and monitor CSS, HTML and JavaScript live.
+    + **ColorZilla** _color extension_ Color picker, gradient generator and other colorful goodies.
+    + **Firebug** _web developper extension_ Web development tools: edit debug and monitor CSS, HTML and JavaScript live.
     + **Focus Regainer Lite** _get focus_ Keep focus on embedded object.
     + **REST Easy** _Rest Client_ A simple REST client for Firefox.
-    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web
-    server (Apache, Nginx…) thanks to HTTP Headers or page content.
+    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web server (Apache, Nginx…) thanks to HTTP Headers or page content.
     + **Yslow** _Performance tool_ Make your pages faster thanks to Yslow.
 + **Google Chrome** _web browser_
     + **Google Hangout** _Google im_
     + **Unlimited Free VPN - Hola** _VPN_ Add VPN into Chrome.
     + **Postman** _Rest Client_ Build, test, and document your APIs faster.
     + **Save to Pocket** _Bookmarks online_
-    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web
-    server (Apache, Nginx…) thanks to HTTP Headers or page content.
+    + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web server (Apache, Nginx…) thanks to HTTP Headers or page content.
 
 ### Media
 
@@ -48,8 +44,8 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 ### Terminal
 
 + **Dmenu** _dynamic menu_ application launcher
-+ [**k**](https://github.com/supercrabtree/k) _directory listings like ls_ Directory listings for zsh with git features
-+ **Ranger** _file manager_ extensible file manager using vim keymaps
++ [**K**](https://github.com/supercrabtree/k) _directory listings like ls_ Directory listings for zsh with git features
++ [**Ranger**](http://nongnu.org/ranger/) _file manager_ extensible file manager using vim keymaps
 + **Terminator** _terminal emulator_
 + **Tmux** _terminal multiplexer_
 + **Zsh** _shell_ powerfull shell
