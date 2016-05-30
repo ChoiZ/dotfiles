@@ -39,6 +39,7 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Programming
 
++ [**Git**](https://git-scm.com/) _Version control system_
 + [**Vim**](https://github.com/choiz/Vim-Config) _text editor_ My Vim-Config with many plugins…
 
 ### Terminal
