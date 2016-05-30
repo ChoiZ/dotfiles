@@ -52,7 +52,7 @@
     excludesfile = ~/.gitignore
     editor = vim
     filemode = false
-    pager = less -r
+    pager ="less -FRSX"
 [pager]
     grep = false
 [push]
