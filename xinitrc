@@ -3,7 +3,7 @@ export LC_ALL="fr_FR.UTF-8"
 export PATH=/opt/bin:$PATH
 
 xset -dpms
-xset s 600
+xset s 300
 
 export TERM=xterm-256color
 export EDITOR=vim
@@ -26,4 +26,9 @@ fi
 
 feh --bg-fill ~/.dotfiles/i3/wallpaper/ &
 
-exec $1
+if [ -n "$1" ]
+then
+    exec $1
+else
+    exec i3
+fi
