@@ -24,7 +24,7 @@ then
     sh ~/.dotfiles/screenlayout/desktop.sh
 fi
 
-feh --bg-fill ~/.dotfiles/i3/wallpaper/ &
+feh --bg-fill ~/.dotfiles/wallpaper/mountains.jpg &
 
 if [ -n "$1" ]
 then
