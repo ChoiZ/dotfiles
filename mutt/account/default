@@ -1,0 +1,8 @@
+set from            = "your_email@gmail.com"
+set smtp_pass       = "your_password"
+set realname        = "François LASSERRE"
+set signature       = ~/.mutt/account/default.signature
+set postponed       = "Drafts"
+set spoolfile       = "imaps://your_email:your_password@imap.gmail.com/INBOX"
+set folder          = "imaps://your_email:your_password@imap.gmail.com/INBOX"
+set smtp_url        = "smtps://your_email@gmail.com@smtp.gmail.com:465"
