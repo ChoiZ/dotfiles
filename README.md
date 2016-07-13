@@ -31,6 +31,8 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 ### Mail
 
 * **Mutt** _mail client_ command line mail client
+    * **Mutt-ics** _mutt plugin for calendar_
+    * **mailcap** _check mime-type and open the good application_
 
 ### Media
 
