@@ -28,6 +28,10 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
     + **Save to Pocket** _Bookmarks online_
     + **Wappalyzer** _Identifies software_ Detect JavaScript libraries, Web server (Apache, Nginx…) thanks to HTTP Headers or page content.
 
+### Mail
+
+* **Mutt** _mail client_ command line mail client
+
 ### Media
 
 + **Clementine** _music player_ audio player
