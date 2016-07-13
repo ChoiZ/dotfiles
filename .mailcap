@@ -1,0 +1,13 @@
+application/pdf             ; qpdfview '%s'         ;
+application/msword          ; oowriter '%s'         ; test=test -n "$DISPLAY"
+application/vnd.ms-excel    ; oocalc '%s'           ; test=test -n "$DISPLAY"
+audio/*                     ; clementine '%s'       ;
+image/*                     ; feh '%s'              ;
+video/*                     ; vlc '%s'              ;
+text/calendar               ; mutt-ics              ; copiousoutput
+text/html                   ; firefox '%s'          ; test=test -n "$DISPLAY"
+text/html                   ; firefox '%s'          ;
+#text/html                   ; w3m -T text/html '%s'         ; needsterminal
+#text/html                   ; w3m -T text/html -dump '%s'   ; copiousoutput
+text/*                      ; gvim -Mf '%s'         ; test=test -n "$DISPLAY"
+text/*                      ; vim -Mf '%s'          ; needsterminal
