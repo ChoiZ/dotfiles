@@ -1,11 +1,11 @@
 # ~/.gitignore
-# Last modified: 2013-08-03
+# Last modified: 2016-07-26
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 # Linux
-.*
-!.gitignore
+#.*
+#!.gitignore
 *~
 
 # Mercurial (hg)
