@@ -50,11 +50,12 @@ Config files for (git, i3wm, ranger, terminator, tmux, vim, zsh)
 
 ### Terminal
 
-+ **Dmenu** _dynamic menu_ application launcher
 + [**K**](https://github.com/supercrabtree/k) _directory listings like ls_ Directory listings for zsh with git features
++ [**Oh-My-Zsh**](http://ohmyz.sh/) _shell framework_ community-driven framework for managing ZSH
 + [**Ranger**](http://nongnu.org/ranger/) _file manager_ extensible file manager using vim keymaps
-+ **Terminator** _terminal emulator_
-+ **Tmux** _terminal multiplexer_
++ [**Rofi**](https://davedavenport.github.io/rofi/) _dynamic menu_ application launcher
++ [**Terminator**](https://launchpad.net/terminator/) _terminal emulator_ Multiple terminals in one window.
++ [**Tmux**](https://tmux.github.io/) _terminal multiplexer_
 + **Zsh** _shell_ powerfull shell
 
 ## Setup
