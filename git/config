@@ -20,7 +20,7 @@
     cp = cherry-pick
     sh = show --color-words
     st = status
-    di = diff
+    di = diff -w # without whitespaces
     pom = push origin master
     me = merge
     menoff = merge --no-ff
@@ -37,6 +37,7 @@
     stapp = stash pop
     starm = stash drop
     # log
+    lod = log --decorate
     logs = log --stat --decorate
     graph = log --graph --decorate
     graphs = log --graph --decorate --stat
@@ -71,3 +72,8 @@
 [hooks]
     checkphp = true
     checkjs = true
+    checkversion = true
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    required = true
