@@ -5,20 +5,21 @@ alias zalias="vim ~/.dotfiles/zsh/aliases.zsh"
 # Aliases
 alias c=clear
 alias clr=clear
+alias d=docker
+alias d-c="docker-compose"
 alias du='du -h'
 alias df='df -h'
 alias dl='~/Téléchargements'
 alias g=git
 alias gitdir='echo `git rev-parse --git-dir`'
 alias h=~
-alias ls="k -h"
-alias ph=php
+alias l=ls
+alias p=php
 alias py=python
 alias ps='ps -aux'
 alias v=vim
 alias vi=vim
-alias vup="vagrant up"
-alias vsh="vagrant ssh"
+alias va="vagrant"
 
 alias tree='tree -C' # enable color on tree
 alias less='less -x4' # mess indent = 4
