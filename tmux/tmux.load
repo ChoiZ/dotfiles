@@ -2,9 +2,9 @@
 
 tmux -2 new -d -c "$HOME" -n "root" -s "dev"
 tmux send-keys -t dev:root su Enter
-tmux neww -c "$HOME/devbox7/www/manomano" -n "dev"
-tmux neww -c "$HOME/devbox7" -n "vagrant"
-tmux send-keys -t dev:vagrant "vagrant up" Enter
+tmux neww -c "$HOME/docker/www/manomano-sf" -n "dev"
+tmux neww -c "$HOME/docker" -n "docker"
+tmux send-keys -t dev:docker "d-c up" Enter
 tmux neww -c "$HOME" -n "preprod"
-tmux send-keys -t dev:preprod preprod2 Enter
+tmux send-keys -t dev:preprod sshmm Enter
 tmux attach
