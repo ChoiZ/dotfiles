@@ -1,0 +1,32 @@
+Xcursor.size:16
+
+URxvt*background:   #000000
+URxvt*foreground:   #FFFFFF
+URxvt.termName: rxvt-unicode
+URxvt.foregrond: white
+URxvt.background: black
+URxvt.scrollBar: false
+URxvt*font: xft:DejaVuSans
+!URxvt.font:                xft:Monaco-Powerline:pixelsize=9
+!URxvt.boldFont:            xft:Monaco-Powerline:pixelsize=9:bold
+!URxvt.italicFont:          xft:Monaco-Powerline:pixelsize=9:italic
+!URxvt.boldItalicFont:      xft:Monaco-Powerline:pixelsize=9:bold:italic
+URxvt.letterSpace:         -1
+
+URxvt.color12: rgb:5c/5c/ff
+
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+
+URxvt*fading:              30
+
+!URxvt.perl-ext-common:     matcher,resize-font,foo
+
+URxvt.keysym.F11:          perl:fullscreen:switch
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
+
+URxvt.url-launcher:        /usr/bin/firefox-bin
+URxvt.keysym.M-Delete:     perl:matcher:list
+URxvt.colorUL:             #7780a1
