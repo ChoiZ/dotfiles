@@ -3,7 +3,7 @@ export LC_ALL="fr_FR.UTF-8"
 export PATH=/opt/bin:$PATH
 
 xset -dpms
-xset s 300
+xset s 900
 
 source ~/.dotfiles/screenlayout/dualscreen.sh &
 source ~/.dotfiles/wallpaper.sh &
