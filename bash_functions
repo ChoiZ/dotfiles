@@ -1,5 +1,4 @@
 # ~/.bash_functions
-# Last modified: 2015-01-19
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
@@ -95,8 +94,8 @@ routeToVpn() {
   sudo route -v add -host $1 -interface ppp0
 }
 
-# Random password
+# Random password (without I,L,O,i,l,o,0)
 function randompass() {
-    < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c16
+    < /dev/urandom tr -dc _A-H-J-K-M-N-P-Z-a-h-j-k-m-n-p-z-1-9 | head -c16
     echo
 }
