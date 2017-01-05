@@ -37,8 +37,9 @@
     stapp = stash pop
     starm = stash drop
     # log
-    lod = log --decorate
+    logd = log --decorate
     logs = log --stat --decorate
+    logsd = log --stat --decorate
     graph = log --graph --decorate
     graphs = log --graph --decorate --stat
     tree = log --graph --format='%ar %h %s %cd' --decorate --stat
