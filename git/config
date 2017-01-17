@@ -1,11 +1,12 @@
 # ~/.gitconfig
-# Last modified: 2016-05-28
+# Last modified: 2017-01-17
 # Author: François LASSERRE <choiz@me.com>
 # License: GNU GPL http://www.gnu.org/licenses/gpl.html
 
 [user]
     name = François LASSERRE
     email = choiz@me.com
+    signingkey = 6C0C9204CD9D3BE3
 [diff]
     tool = vimdiff
 [color]
