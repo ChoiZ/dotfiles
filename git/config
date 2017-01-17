@@ -7,6 +7,8 @@
     name = François LASSERRE
     email = choiz@me.com
     signingkey = 6C0C9204CD9D3BE3
+[commit]
+    gpgsign = true
 [diff]
     tool = vimdiff
 [color]
@@ -36,10 +38,10 @@
     stapp = stash pop
     starm = stash drop
     # log
-    graph = log --graph --decorate
-    graphs = log --graph --decorate --stat
+    graph = log --graph --decorate --show-signature
+    graphs = log --graph --decorate --stat --show-signature
     tree = log --graph --format='%ar %h %s %cd' --decorate --stat
-    logs = log --stat --decorate
+    logs = log --stat --decorate --show-signature
     # branch
     # current branch
     cb = rev-parse --abbrev-ref HEAD
