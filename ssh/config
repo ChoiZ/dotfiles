@@ -1,2 +1,8 @@
-Host *.veoprint.com *.interfaces.fr
-	IdentityFile ~/.ssh/veoprint
+Host *
+ServerAliveInterval 15
+ServerAliveCountMax 4
+TCPKeepAlive yes
+ForwardAgent yes
+PermitLocalCommand no
+ForwardX11 no
+AddKeysToAgent yes
