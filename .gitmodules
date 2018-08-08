@@ -1,0 +1,6 @@
+[submodule "vim"]
+  path = vim
+  url = https://github.com/ChoiZ/Vim-config
+[submodule "git"]
+  path = git
+  url = https://github.com/ChoiZ/git-config.git
